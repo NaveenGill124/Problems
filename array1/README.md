@@ -24,3 +24,7 @@ When solving the “Set Matrix Zeroes” problem, it’s tempting to jump straig
 - In solving “Next Permutation,” I learned to break the problem into clear steps—identifying the pivot, swapping with the next larger element, and reversing the suffix—to systematically generate the next lexicographical order.  
 - Along the way, I refreshed key Python techniques like reverse loops, in-place swaps, and efficient slice operations.  
 
+
+### Sort Colors Problem
+- While the built-in `nums.sort()` one-liner is concise, it runs in O(n log n) time; the Dutch National Flag algorithm partitions the three colors in a single pass (O(n) time, O(1) space), making it far more efficient for this problem.  
+- This shows that brevity in code doesn’t always equate to optimal performance—sometimes a few extra lines unlock significant time savings.  
