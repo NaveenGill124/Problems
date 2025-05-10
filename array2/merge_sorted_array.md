@@ -1,4 +1,4 @@
-### Merge Sorted Array
+## What I learned from Merge Sorted Array problem
 
 - Learned to merge two sorted arrays in-place by using two pointers from the end, achieving O(m+n) time and O(1) extra space.
 
