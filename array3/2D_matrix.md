@@ -1,6 +1,6 @@
 ## What I learned from Unique Paths
 
-Given an \(m \times n\) grid, any path from the top-left to the bottom-right consists of exactly:
+Given an \(m x n\) grid, any path from the top-left to the bottom-right consists of exactly:
 \[
 (m - 1)\text{ down-steps (D)} \quad\text{and}\quad (n - 1)\text{ right-steps (R)},
 \]
