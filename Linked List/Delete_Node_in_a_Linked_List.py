@@ -14,5 +14,8 @@ class Solution:
         :rtype: void Do not return anything, modify node in-place instead.
         """
         
+        # Copy the value from the next node to the current node
         node.val = node.next.val
+        
+        # Bypass the next node by linking current node to the next of next node
         node.next = node.next.next
