@@ -1,4 +1,4 @@
-## ⛰️ What I Learned from "Peak Index in a Mountain Array"
+## What I Learned from "Peak Index in a Mountain Array"
 
 - This problem helped me understand how to apply **binary search** in a slightly different way — not just for finding a number, but for finding a **peak element**.
 - I realized early on that one side of the peak is **strictly increasing** and the other side is **strictly decreasing**, which is key to using binary search efficiently.
