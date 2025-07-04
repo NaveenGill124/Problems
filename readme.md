@@ -15,9 +15,14 @@ This repository is designed to document my problem-solving journey on LeetCode. 
 
 ## 📂 Structure
 
-📁 Problem-Name/
-├── solution.py (or .cpp/.js, etc.)
+```bash
+📁 Topic/
+├── Problem-Name1.py
 └── README.md
+.
+.
+.
+```
 
 
 Each folder is named after the corresponding problem to maintain clarity and organization.
