@@ -1,4 +1,4 @@
-## 🧮 LeetCode 224. Basic Calculator
+## LeetCode 224. Basic Calculator
 
 ### Problem Description
 
@@ -24,46 +24,16 @@ Output: 23
 
 ---
 
-### ✅ 1. Manual Expression Parsing
+- First, I created a function called `into_splits` to manually break the input string into a list of tokens.
+  - I faced challenges in properly handling **multi-digit numbers** and ignoring spaces.
+  - To solve this, I used a temporary variable `num` to keep building the number character by character until a symbol or parenthesis was found, then added it to `splits`.
 
+- After splitting, I created a main `calculate` function to evaluate the tokens.
+  - Here, I learned how to use a **stack** to keep track of previous `res` and `sign` values when I encounter an opening parenthesis `(`.
+  - When I find a closing parenthesis `)`, I **pop the last sign and result** from the stack and combine it with the current `res`.
 
-- first I splits the given string with a function
-  - with proper spliting I created another main function in that my cahllenges comes like how to split it properly then in mainn function, 
+- I used the `sign` variable to manage whether the current number should be added or subtracted.
+  - This made it easy to apply the sign just when a number is found, keeping the logic clean.
 
----
-
-### ✅ 2. Stack-Based Evaluation
-Parentheses introduce **nested scopes**, so I learned to use a **stack** to:
-
-- Save the current result and sign when entering a parenthesis `(`
-- Restore and combine results when exiting a parenthesis `)`
-
-This mimics how we solve expressions on paper and is a common technique used in compilers and interpreters.
-
----
-
-### ✅ 3. Sign Management
-Instead of evaluating every expression immediately, I learned to keep track of the **current sign** (`+` as `+1`, `-` as `-1`) and apply it when the next number comes.  
-This simplified the logic and made it easier to handle **deeply nested expressions**.
-
----
-
-### ✅ 4. Edge Case Awareness
-This problem made me more attentive to subtle edge cases like:
-
-- Leading, trailing, or multiple spaces
-- Nested parentheses
-- Multi-digit numbers
-- When to apply the sign vs. when to push/pop from the stack
-
----
-
-### ✅ 5. Clean Code and Separation of Concerns
-I structured my solution with **clear separation of responsibilities**:
-
-- A `tokenize()` function to handle input parsing
-- An `evaluate()` function to process the expression logic
-
-This made my code more **modular, readable, and reusable** — a valuable practice in real-world development.
-
----
+- Overall, separating the logic into `into_splits` and `calculate` helped me write modular and understandable code.
+  - It also made debugging easier since I could test tokenization and evaluation independently.
