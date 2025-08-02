@@ -5,8 +5,6 @@ class ListNode:
         self.next = None
 
 
-__import__("atexit").register(lambda: open("display_runtime.txt", "w").write("0"))
-
 class Solution:
     def deleteNode(self, node):
         """
